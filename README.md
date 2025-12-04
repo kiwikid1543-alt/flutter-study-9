@@ -57,3 +57,5 @@
 - VsCode에서 터미널열기 : `command + J`
 - command shift . : 숨김파일보기
 - 파일 수정 후에는 항상 저장해서 파일명 우측에 동그라미 없는지 확인!
+- VsCode 멀티라인 선택 : option + command + 화살표
+- switch, for 문 만들 때 VsCode 자동완성 기능 활용해서 전체블럭 만들기!
