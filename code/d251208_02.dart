@@ -12,7 +12,9 @@ void main() {
   print('2 * 8 = 16');
   print('2 * 9 = 18');
 
-  for (int i = 1; i <= 9; i++) {
-    print('2 * $i = ${2 * i}');
+  for (int i = 2; i <= 9; i++) {
+    for (int j = 1; j <= 9; j++) {
+      print('$i * $j = ${i * j}');
+    }
   }
 }
