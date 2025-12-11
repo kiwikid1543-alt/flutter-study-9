@@ -16,8 +16,6 @@ void main() async {
   //  - 인자로 넘겨준 문자열을 기준으로 분리해서 List로 만들어줌
   // lines : ["홍길동,90", "김철수,80", "지은성,100"...]
   List<String> lines = content.split('\n');
-  List<String> nameList = [];
-  List<int> scoreList = [];
   List<Student> studentList = [];
   // print(lines[0]);
   for (String nameAndScore in lines) {
@@ -30,8 +28,6 @@ void main() async {
     // "ABC"라는 문자열을 파싱해서 에러났을 때 null이 반환되는데, null일 땐 0을 abc라는 변수에 넣어라!
     // int abc = int.tryParse("ABC") ?? 0;
     int score = int.tryParse(nameAndScoreList[1]) ?? 0;
-    nameList.add(name);
-    scoreList.add(score);
 
     print(name);
     print(score);
@@ -39,19 +35,6 @@ void main() async {
     Student s = Student(name, score);
     studentList.add(s);
   }
-  // 이름과 점수가 각각 다른리스트에서 관리된다면
-  // 만약 점수리스트에서 값이 제거된다면
-  // 이름리스트와 점수리스트 내 index들이 맞지 않음!
-  // 그래서 하나의 클래스에 이름과 점수를 함께 담을 수 있게 구현해서
-  // 그 클래스 객체에 이름과 점수를 함께 담은 후
-  // 리스트에 그 객체를 저장할거임
-  // 그 클래스 이름 Student 라고 할거임!
-
-  print(nameList);
-  print(scoreList);
-  scoreList.removeAt(0);
-  nameList[2];
-  scoreList[2];
 }
 
 class Student {
