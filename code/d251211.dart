@@ -14,7 +14,7 @@ void main() async {
   // split 함수
   //  - String 클래스가 가지고 있는 메서드
   //  - 인자로 넘겨준 문자열을 기준으로 분리해서 List로 만들어줌
-  // lines : ["홍길동,90", "김철수,80", "지은성,100"...]
+  // lines : [" ", "김철수,80", "지은성,100"...]
   List<String> lines = content.split('\n');
   List<Student> studentList = [];
   // print(lines[0]);

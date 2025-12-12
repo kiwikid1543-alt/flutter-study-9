@@ -63,3 +63,5 @@
 ![스크린샷](images/251205_break.png) 스크린샷: command+shift+4
 - 브레이크 빨간점 활용 하나씩 단계별로 실행해볼수 있음
 - 커밋메시지 남길 때  커밋태그 docs, feat, fix
+- TODO 주석 작성할 때 '//' 바로 뒤에 TODO 작성해야 TODO tree에 나옴
+    - by 지은성 251212
