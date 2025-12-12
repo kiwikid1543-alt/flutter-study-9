@@ -45,6 +45,7 @@ void main() async {
   final joolDeul = txtString.split('/n');
   // 2. 각줄마다 콤마단위로 구분
   // for in 문 => 우측의 리스트를 좌측의 변수에 한씩 담는다.
+  List<StudentScore> haksangdeul = [];
   for (String jool in joolDeul) {
     // ["홍길동", "90"]
     // ["김철수", "80"]
@@ -52,7 +53,7 @@ void main() async {
     final erum = jinjaBunli[0];
     final jeumsu = jinjaBunli[1];
     final sutjajeumsu = int.parse(jeumsu);
-    final StudentScore = StudentScore(erum, sutjajeumsu);
-    haksangdeul.add(StudentScore);
+    final studentScore = StudentScore(erum, sutjajeumsu);
+    haksangdeul.add(studentScore);
   }
 }
