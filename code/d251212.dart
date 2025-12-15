@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'd251211.dart';
 
 class Score {
@@ -55,5 +54,23 @@ void main() async {
     final sutjajeumsu = int.parse(jeumsu);
     final studentScore = StudentScore(erum, sutjajeumsu);
     haksangdeul.add(studentScore);
+  }
+  print("어떤 학생의 점수 확인?");
+  String sayougJaIpRuk = stdin.readLineSync()!;
+  // haksangdeul 이라는 리스트에 담긴 학생 이름과 sayougJaIpRuk이라는 입력값과 비교
+  // 있는지 확인
+  // haksangdeul : [StudentScore("홍길동,90"), StudentScore("김철수,80")]
+  StudentScore? chatneunHaksang = null;
+
+  for (StudentScore haksang in haksangdeul) {
+    if (sayougJaIpRuk == haksang.name) {
+      chatneunHaksang = haksang;
+      break;
+    }
+  }
+  if (chatneunHaksang == null) {
+    print("잘못되어");
+  } else {
+    print("이름: ${chatneunHaksang.name}, 점수: ${chatneunHaksang.point}");
   }
 }
