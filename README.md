@@ -65,3 +65,5 @@
 - 커밋메시지 남길 때  커밋태그 docs, feat, fix
 - TODO 주석 작성할 때 '//' 바로 뒤에 TODO 작성해야 TODO tree에 나옴
     - by 지은성 251212
+- command+option+화살표 => 영역선택    
+- 문서화 주석 ///

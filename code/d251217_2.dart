@@ -48,7 +48,7 @@ class Human {
     this.haircolor,
     this.child,
   }) : this.skinColor = "Black";
-  Human.whiteSkin(
+  Human.whiteSkin(  
     this.name, {
     required this.age,
     required this.gender,
